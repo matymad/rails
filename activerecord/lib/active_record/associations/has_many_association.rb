@@ -55,7 +55,7 @@ module ActiveRecord
         end
 
         def cached_counter_attribute_name(reflection = self.reflection)
-          "#{reflection.name}_count"
+          "#{self.reflection.name}_count"
         end
 
         def update_counter(difference, reflection = self.reflection)
